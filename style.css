@@ -1,0 +1,79 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     /* box-sizing: border-box;
+     object-fit: contain; */
+     letter-spacing: .2em;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Teko', sans-serif;
+    background:radial-gradient(closest-side, #b6b5b4, #363635, #111111) ;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    border: 2px solid black;
+    border-radius: 100px;
+    
+    
+    
+}
+.options{
+    padding: 100px;
+    width: 80%;
+    display:flex;
+    justify-content: space-between;
+    
+    
+   
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-style: none;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    transition: transform .2s;
+    background-color: transparent;
+   
+    
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+#rock{
+    background-image: url("fist.png") ;
+    background-size: 150px;
+    
+}
+
+#paper{
+    background-image:url("paper.png");
+    background-size: 150px;
+    /* transform:scaleX(-1); */
+   
+}
+
+#scissors{
+    background-image: url("scissors.png");
+    background-size: 200px;
+    /* transform:rotate(270deg);    */
+}
