@@ -60,6 +60,17 @@ const scoreTable = (result) => {
              ++compScore;
         }
          score.innerText = `${userScore} - ${compScore}`;
+         if(userScore + compScore == 5){ 
+            if(userScore > 2) {
+               text="You have won the game. Congrats!";
+            } else {
+               text="Computer has won the game. Try again :(";
+            }
+            final.innerText = `${text}`;
+            userScore =0;
+            compScore= 0;
+            score.innerText =`${userScore} - ${compScore}`;
+         };
     }
 }
 const game = scoreTable();
