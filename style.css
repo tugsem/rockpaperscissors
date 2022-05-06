@@ -57,19 +57,19 @@ body {
 }
 
 #rock {
-    background-image: url("../assets/fist.png") ;
+    background-image: url("./assets/fist.png") ;
     margin: 10px;
 }
 
 #paper {
-    background-image:url("../assets/paper.png");
+    background-image:url("./assets/paper.png");
     margin: 0 10px;
 }
 #rotate {
     transform: rotate(-90deg);
 }
 #scissors {
-    background-image: url("../assets/scissors.png");
+    background-image: url("./assets/scissors.png");
     margin: 10px 0;
 }
 
