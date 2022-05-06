@@ -1,14 +1,15 @@
-*{
+* {
      margin: 0px;
      padding: 0px;
-     /* box-sizing: border-box;
-     object-fit: contain; */
+     box-sizing: border-box;
      letter-spacing: .2em;
+     text-align: center;
 }
 
-body{
+body {
     display: flex;
     min-height: 100vh;
+    margin: 0 auto;
     font-family: 'Teko', sans-serif;
     background:radial-gradient(closest-side, #b6b5b4, #363635, #111111) ;
     background-repeat: no-repeat;
@@ -16,70 +17,73 @@ body{
     justify-content: center;
     
 }
-.container{
+.container {
+    padding: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
     border: 2px solid black;
-    border-radius: 100px;
-    
-    
-    
-}
-.options{
-    padding: 100px;
-    width: 80%;
-    display:flex;
-    justify-content: space-between;
-    
-    
-   
+    border-radius: 10%; 
 }
 
-.result{
+.options {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.btn{
+.btn {
     width: 200px;
     height: 200px;
-    position: relative;
     border-style: none;
-    background-size: cover;
+    background-size: contain;
     background-repeat:no-repeat;
     background-position:center;
-    transition: transform .2s;
+    transition: all .2s;
     background-color: transparent;
-   
-    
 }
+
 .btn:hover {
-  transform: scale(1.2);
-}
-#rock{
-    background-image: url("fist.png") ;
-    background-size: 150px;
-    
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
-#paper{
-    background-image:url("paper.png");
-    background-size: 150px;
-    /* transform:scaleX(-1); */
-   
+#rock {
+    background-image: url("../assets/fist.png") ;
+    margin: 10px;
 }
 
-#scissors{
-    background-image: url("scissors.png");
-    background-size: 200px;
-    /* transform:rotate(270deg);    */
+#paper {
+    background-image:url("../assets/paper.png");
+    margin: 0 10px;
+}
+#rotate {
+    transform: rotate(-90deg);
+}
+#scissors {
+    background-image: url("../assets/scissors.png");
+    margin: 10px 0;
 }
 
-
-#final{
+#final {
     color:white;
-    
+}
+
+@media only screen and (max-width: 680px) { 
+    .options {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn {
+        width: 100px;
+        height: 100px;
+    }
 }
